@@ -1,11 +1,13 @@
 Boris Bikes
 ===========
-This project serves as an introduction to Object-Oriented Programming (OOP) and the basics of Object-Oriented Design (OOD). We are creating a simple system for managing Boris (Barclays) Bikes in London. 
+This project serves as an introduction to Object-Oriented Programming (OOP) and the basics of Object-Oriented Design (OOD). We are creating a simple system for managing Boris Bikes in London.
 
-Day 1 
------
-Paired with Toan (@yoshdog) today TDD'ing Boris Bikes. We learned about classes, domain models and CRC (Class Responsibility Collaborators) and used them on this project. It was interesting to have to work out what responsibilities belong to certain classes and how they interact with one another. Toan and I were all over the best practices by using branches while functionality was still being developed, committing often, writing meaningful commit messages. Super fun pairing with him!
+Users can rent bikes from docking stations and return them. The docking station has a fixed capacity and will release working bikes to users if they are available. Users can break bikes. A broken bike will not be released to a user. A van collects broken bikes from the docking station and takes them to a garage to be fixed. The van also picks up working bikes from the garage and returns them to the docking stations. 
 
-Day 2
+Day 1-2
 ------
-Paired with Charlotte (@cmew3) today to program our Boris Bikes project from scratch. Learned about Object-Oriented doubling (London style) and mocking (Chicago style), and prepending modules.
+Paired with Jenny to program our Boris Bikes project from scratch. Learned about Object-Oriented doubling (London style) and mocking (Chicago style), and prepending modules.
+
+Day 3
+-------
+Tidied up doubles with help of Sandi Metz's excellent video on The Magic Tricks of Testing - Sandi Metz - RailsConf2013 (https://www.youtube.com/watch?v=URSWYvyc42M)

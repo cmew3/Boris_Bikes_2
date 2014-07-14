@@ -1,16 +1,10 @@
 require './lib/bike_container'
 
-# class ContainerHolder; include BikeContainer; end
-
 shared_examples 'a bike container' do
-	let (:container) {described_class.new(capacity:20)}
-# end
 
-# describe BikeContainer do
-	
-	let (:bike) { double :bike, instance_of?: true, fix!: :bike }
-	let (:bike2) { double :bike2, instance_of?: true, fix!: :bike }
-	# let (:container) { ContainerHolder.new }
+	let (:container) { described_class.new(capacity:20)				  }
+	let (:bike) 	 { double :bike, instance_of?: true, fix!: :bike  }
+	let (:bike2) 	 { double :bike2, instance_of?: true, fix!: :bike }
 
 	it 'should accept a bike' do
 		expect(container.bike_count).to eq (0)
@@ -67,7 +61,4 @@ shared_examples 'a bike container' do
 		expect(container.broken_bikes).to eq([broken_bike])
 	end
 
-	it 'should be able to select working bikes when working bikes selected' do
-			
-	end
 end

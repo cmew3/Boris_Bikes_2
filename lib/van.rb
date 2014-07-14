@@ -5,7 +5,6 @@ class Van
 	include BikeContainer
 
 	def initialize(capacity: DEFAULT_CAPACITY, bikes: [])
-		# self.capacity = options.fetch(:capacity, capacity)
 		@capacity = capacity
 		@bikes    = bikes
 	end

@@ -3,9 +3,10 @@ require 'bike'
 
 describe DockingStation do
 
-	let (:bike) { double :bike }
-	let (:old_street) { DockingStation.new }
-	let (:moorgate) {DockingStation.new(:capacity => 30)}
+	it_behaves_like 'a bike container'
+
+	let (:old_street) { DockingStation.new 						}
+	let (:moorgate)   { DockingStation.new(:capacity => 30)		}
 
 	it 'has no bikes when created' do
 		expect(old_street.bikes).to eq []
