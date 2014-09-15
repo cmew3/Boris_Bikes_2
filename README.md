@@ -6,8 +6,19 @@ Users can rent bikes from docking stations and return them. The docking station 
 
 Day 1-2
 ------
-Paired with Jenny to program our Boris Bikes project from scratch. Learned about Object-Oriented doubling (London style) and mocking (Chicago style), and prepending modules.
+Paired with [Jenny](https://github.com/thejennywang) to program our Boris Bikes project from scratch. Learned about Object-Oriented doubling (London style) and mocking (Chicago style), and prepending modules.
 
 Day 3
 -------
-Tidied up doubles with help of Sandi Metz's excellent video on The Magic Tricks of Testing - Sandi Metz - RailsConf2013 (https://www.youtube.com/watch?v=URSWYvyc42M)
+Revisited solo to tidy up doubles with help of Sandi Metz's excellent video on The Magic Tricks of Testing - Sandi Metz - RailsConf2013 (https://www.youtube.com/watch?v=URSWYvyc42M)
+
+How to run tests
+----------
+Tested using [rspec](https://github.com/rspec/rspec)
+
+```shell
+git clone https://github.com/cmew3/Boris_Bikes_2.git
+cd Boris_Bikes_2
+gem install rspec
+rspec
+```
